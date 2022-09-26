@@ -1,0 +1,25 @@
+.searchboxdiv {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.searchlogo {
+  margin-left: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.searchbox {
+  width: 300px;
+  height: fit-content;
+  cursor: pointer;
+  border: none;
+  opacity: 0.3;
+}
+
+.searchbox:focus-within{
+  outline: none;
+}

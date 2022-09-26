@@ -1,0 +1,28 @@
+.logotext *{
+  background-color: orange;
+}
+
+.logo{
+  position: absolute;
+width: 35px;
+height: 31px;
+left: 15px;
+}
+.text {
+
+  position: absolute;
+  width: 82px;
+  height: 30px;
+  left: 72px;
+
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  /* identical to box height */
+
+
+  color: #000000;
+
+}
