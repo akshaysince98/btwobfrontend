@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Herobox() {
+function Herobox(props) {
   return (
-    <div>Herobox</div>
+    <>
+      {props.hero}
+    </>
   )
 }
 
