@@ -1,0 +1,13 @@
+.allcompanies {
+  display: flex;
+  flex-wrap: wrap;
+  width: 920px;
+}
+
+.herosimilartext {
+  margin-left: 60px;
+  margin-top: 50px;
+  opacity: 0.5;
+  font-size: 22px;
+  font-weight: 700;
+}

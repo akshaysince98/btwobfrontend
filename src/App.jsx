@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Herobox from './components/Herobox';
 import Searchbox from './components/Searchbox';
@@ -7,6 +8,7 @@ import Sidebar from './components/Sidebar';
 function App() {
 
   const [hero, setHero] = useState('image')
+  const [data, setData] = useState([])
 
   const imageherochange = (str) => {
     if (str == 'input') {
@@ -16,8 +18,22 @@ function App() {
     hero == 'image' ? setHero('data') : setHero('image')
   }
 
-  // const data = await axios.get("/user/logout");
-  
+  useEffect(() => {
+    (async () => {
+      const apiresponse = await axios.get("https://staging.staging.b2brain.com/search/autocomplete_org_all/?q=");
+      setData(apiresponse.data)
+    })()
+  }, [])
+
+
+
+  const apisearch = async (search) => {
+    const apiresponse = await axios.get("https://staging.staging.b2brain.com/search/autocomplete_org_all/?q=" + search);
+
+    setData(apiresponse.data)
+  }
+
+
   return (
     <>
       <div className='sidesearchherobox'>
@@ -26,10 +42,10 @@ function App() {
         </div>
         <div className='searchherobox'>
           <div className='search'>
-            <Searchbox imageherochange={imageherochange} />
+            <Searchbox imageherochange={imageherochange} apisearch={apisearch} />
           </div>
           <div className='hero'>
-            <Herobox hero={hero} />
+            <Herobox hero={hero} data={data} />
           </div>
         </div>
       </div>

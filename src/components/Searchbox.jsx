@@ -16,14 +16,14 @@ function Searchbox(props) {
   }
 
   const searching = (e) => {
-
+    props.apisearch(e.target.value)
   }
 
   return (
     <>
       <div className='searchboxdiv' >
         <div onClick={searchClose} className='searchlogo'>{seaClo}</div>
-        <input onChange={searching} onClick={searchclosebox} className='searchbox' type="text" placeholder='Search by account name or website' />
+        <input onBlur={(e)=>e.target.value=''} onChange={searching} onClick={searchclosebox} className='searchbox' type="text" placeholder='Search by account name or website' />
       </div>
     </>
   )

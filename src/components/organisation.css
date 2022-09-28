@@ -1,0 +1,86 @@
+.companybox {
+  display: flex;
+  /* margin-left: 60px; */
+  align-items: center;
+}
+
+.companylogo {
+  height: 50px;
+  width: 50px;
+  border-radius: 2px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: red;
+}
+
+.companyname {
+  font-weight: bold;
+  font-size: large;
+}
+
+.companywebsite {
+  font-size: smaller;
+  opacity: 0.5;
+}
+
+.fullbox {
+  width: 400px;
+  margin-left: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.trackinactive {
+  display: flex;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #FF6059;
+  border-radius: 2px;
+  color: #FF6059;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+.trackinactive:hover {
+  background-color: #FF6059;
+  color: white;
+}
+
+.trackactive {
+  display: flex;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #1AAB2B;
+  border-radius: 2px;
+  color: #1AAB2B;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+.trackactive:hover {
+  background-color: #1AAB2B;
+  color: white;
+}
+
+.trackloading {
+  display: flex;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #FF6059;
+  border-radius: 2px;
+  color: #FF6059;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+}
+
