@@ -15,7 +15,9 @@ function App() {
     }
     hero == 'image' ? setHero('data') : setHero('image')
   }
-  console.log(hero);
+
+  // const data = await axios.get("/user/logout");
+  
   return (
     <>
       <div className='sidesearchherobox'>
