@@ -51,7 +51,7 @@ function Sidebar() {
                 <span className="material-icons">business</span>
                 <span className="sidebartext">Accounts</span>
               </div>
-              <span class="material-icons" >keyboard_arrow_up</span>
+              <span className="material-icons" >keyboard_arrow_up</span>
             </div>
           </> :
             <>
@@ -60,7 +60,7 @@ function Sidebar() {
                   <span className="material-icons">business</span>
                   <span className="sidebartext">Accounts</span>
                 </div>
-                <span class="material-icons" >keyboard_arrow_down</span>
+                <span className="material-icons" >keyboard_arrow_down</span>
               </div>
               <div className="droptext">
                 <div>Manage all</div>
@@ -76,7 +76,7 @@ function Sidebar() {
                 <span className="material-icons">settings</span>
                 <span className="sidebartext">Preferences</span>
               </div>
-              <span class="material-icons" >keyboard_arrow_up</span>
+              <span className="material-icons" >keyboard_arrow_up</span>
             </div>
           </> :
             <>
@@ -85,7 +85,7 @@ function Sidebar() {
                   <span className="material-icons">settings</span>
                   <span className="sidebartext">Preferences</span>
                 </div>
-                <span class="material-icons" >keyboard_arrow_down</span>
+                <span className="material-icons" >keyboard_arrow_down</span>
               </div>
               <div className="droptext">
                 <div>Product Focus</div>
