@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0px;
   width: 100vh;
   overflow: hidden;
 }
@@ -18,7 +18,7 @@ body {
 
 .side {
   width: 239px;
-  height: 1000px;
+  height: 100%;
   position: absolute;
   background: #FFFFFF;
   box-shadow: 4px 0px 16px rgba(30, 30, 30, 0.08);

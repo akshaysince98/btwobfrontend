@@ -48,7 +48,7 @@ function Organisations(props) {
                 trackstate == 'trackactive' ?
                   <div onClick={tracking} className="trackactive">Tracking</div> :
                   trackstate == 'trackloading' ?
-                    <div className="trackloading">TL Track</div> :
+                    <div className="trackloading"> <span className='material-icons'> hourglass_full</span> Track</div> :
                     <div onClick={tracking} className="trackinactive">Track</div>
               }
 

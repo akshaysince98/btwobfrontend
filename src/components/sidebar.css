@@ -19,3 +19,51 @@
   font-size: 22px;
   line-height: 30px;
 }
+
+.sidebarlist {
+  margin-top: 40px;
+  margin-left: 15px;
+}
+
+.listitem {
+  width: 200px;
+  align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.dropitem {
+  width: 200px;
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.dropitemhead {
+  display: flex;
+  align-items: center;
+}
+
+.droptext {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.droptext * {
+  margin-left: 40px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+
+.sidebartext {
+  margin-left: 20px;
+}
+
+.material-icons {
+  opacity: 0.2;
+}
